@@ -1,6 +1,6 @@
 #!/bin/bash
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-
+resName="wyx176"
 #Check Root
 [ $(id -u) != "0" ] && { echo "Error: You must be root to run this script"; exit 1; }
 
@@ -39,7 +39,7 @@ updateme(){
 	if [[ -e ~/version.txt ]];then
 		rm -f ~/version.txt
 	fi
-	version1=`curl -s -L https://git.fdos.me/stack/AR-B-P-B/raw/develop/version.txt`
+	version1=`curl -s -L https://github.com/{resName}/AR-B-P-B/raw/develop/version.txt`
 	version2=`cat /usr/local/SSR-Bash-Python/version.txt`
 	if [[ "$version1" == "$version2" ]];then
 		echo "你当前已是最新版"
@@ -52,7 +52,7 @@ updateme(){
 			export yn=n
 			cd ~
 			echo "开始下载安装包！"
-			curl -s -L https://down.fdos.me/install.sh > ./install-ssr.sh
+			curl -s -L https://github.com/{resName}/AR-B-P-B/raw/develop/install.sh > ./install-ssr.sh
 			echo "开始安装！"
 			sleep 1s
 			bash ./install-ssr.sh
