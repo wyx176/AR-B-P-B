@@ -49,7 +49,7 @@
     wget -q -N --no-check-certificate https://git.fdos.me/stack/AR-B-P-B/raw/master/install.sh && bash install.sh develop
 
 ## 安装&更新 ##
-   wget -q -N --no-check-certificate  https://github.com/wyx176/AR-B-P-B/raw/master/install.sh && bash install.sh
+   wget -q -N --no-check-certificate  https://github.com/wyx176/AR-B-P-B/raw/master/install.sh && bash install.sh develop
 
 ## 自检（没有卵用😝） ##
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/Readour/AR-B-P-B/master/self-check.sh && bash self-check.sh
