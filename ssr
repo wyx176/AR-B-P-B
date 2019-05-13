@@ -53,7 +53,7 @@ checkup(){
 	nowdate=$(date +%Y-%m-%d)
 	if [[ ! -e ~/version.txt || ! -e /tmp/yiyan.date ]];then
 		echo "${nowdate}" > /tmp/yiyan.date
-		curl -s -L https://github.com/{resName}/AR-B-P-B/raw/develop/version.txt > ~/version.txt
+		curl -s -L https://raw.githubusercontent.com/${resName}/AR-B-P-B/develop/version.txt > ~/version.txt
 		
 		version1=`cat ~/version.txt`
 	else
@@ -61,7 +61,7 @@ checkup(){
 			version1=`cat ~/version.txt`
 		else
 			echo "${nowdate}" > /tmp/yiyan.date
-			curl -s -L https://github.com/{resName}/AR-B-P-B/raw/develop/version.txt > ~/version.txt
+			curl -s -L https://raw.githubusercontent.com/${resName}/AR-B-P-B/develop/version.txt > ~/version.txt
 			version1=`cat ~/version.txt`
 		fi
 	fi
