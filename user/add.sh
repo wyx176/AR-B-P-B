@@ -76,9 +76,9 @@ while :;do
                     if [[ ${i} == ${uport} ]];then
                         randsum=$(cat /dev/urandom | tr -dc A-Za-z0-9_ | head -c10 | sed 's/[ \r\b ]//g')
                         echo "请不要使用此脚本进行免流,这意味着您目前的操作通常是不被允许的！"
-                        echo "若您确实需要使用此端口提供代理服务,请输入 ${randsum} 表示您将忽略该警告继续操作,否则请退出"
+                        echo "若您确实需要使用此端口提供代理服务,请输入 123 表示您将忽略该警告继续操作,否则请退出"
                         read -n 10 readsum
-                        if [[ ${readsum} == ${randsum} ]];then
+                        if [[ ${readsum} == "123" ]];then
                             checkport=yes
                             break
                         else
