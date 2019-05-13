@@ -478,11 +478,11 @@ EOF
 fi
 fi
 #Install SSR-Bash Background
-if [[ $1 == "develop" ]];then
-	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://github.com/{resName}/AR-B-P-B/raw/develop/ssr
+if [[ $1 == "develop" ]];then		
+	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/${resName}/AR-B-P-B/develop/ssr
 	chmod +x /usr/local/bin/ssr
 else
-	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://github.com/{resName}/AR-B-P-B/raw/master/ssr
+	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/${resName}/AR-B-P-B/master/ssr
 	chmod +x /usr/local/bin/ssr
 fi
 
