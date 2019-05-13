@@ -271,9 +271,13 @@ else
 fi
 cd /usr/local
 #git clone https://git.fdos.me/stack/shadowsocksr.git
+<<<<<<< HEAD
 git clone https://github.com/{resName}/shadowsocksr
+=======
+git clone https://github.com/${resName}/shadowsocksr
+>>>>>>> master
 cd ./shadowsocksr
-git checkout manyuser
+git checkout master
 git pull
 if [[ $1 == "develop" ]];then
     git checkout stack/dev
@@ -337,9 +341,14 @@ do
         rm -rf /usr/local/shadowsocksr
         cd /usr/local
         #git clone https://git.fdos.me/stack/shadowsocksr.git
+<<<<<<< HEAD
 		git clone https://github.com/{resName}/shadowsocksr
+=======
+		git clone https://github.com/${resName}/shadowsocksr
+>>>>>>> master
         if [[ $1 == develop ]];then
             cd ./shadowsocksr
+			
             git checkout stack/dev
             rm -f ./mudb.json
             mv ../mudb.json ./mudb.json
@@ -356,7 +365,7 @@ do
 	echo "开始部署"
 	cd /usr/local/shadowsocksr
 	git pull
-    git checkout manyuser
+    git checkout master
     if [[ $1 == "develop" ]];then
         git checkout stack/dev
     fi
@@ -367,7 +376,11 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
         cd /usr/local
         #git clone https://git.fdos.me/stack/AR-B-P-B.git
 		#git clone https://github.com/{resName}/shadowsocksr.git
+<<<<<<< HEAD
 		git clone https://github.com/{resName}/AR-B-P-B
+=======
+		git clone https://github.com/${resName}/AR-B-P-B
+>>>>>>> master
         mv AR-B-P-B SSR-Bash-Python
     fi
     cd /usr/local/SSR-Bash-Python
@@ -380,7 +393,11 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
 else
     cd /usr/local
     #git clone https://git.fdos.me/stack/AR-B-P-B.git
+<<<<<<< HEAD
 	git clone https://github.com/{resName}/AR-B-P-B
+=======
+	git clone https://github.com/${resName}/AR-B-P-B
+>>>>>>> master
     cd AR-B-P-B
     git checkout master
     if [[ $1 == "develop" ]];then
