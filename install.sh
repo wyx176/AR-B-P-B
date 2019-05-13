@@ -271,7 +271,6 @@ else
 fi
 cd /usr/local
 #git clone https://git.fdos.me/stack/shadowsocksr.git
-git clone https://github.com/{resName}/shadowsocksr
 
 git clone https://github.com/${resName}/shadowsocksr
 
@@ -340,7 +339,7 @@ do
         rm -rf /usr/local/shadowsocksr
         cd /usr/local
         #git clone https://git.fdos.me/stack/shadowsocksr.git
-		git clone https://github.com/{resName}/shadowsocksr
+
 		git clone https://github.com/${resName}/shadowsocksr
         if [[ $1 == develop ]];then
             cd ./shadowsocksr
@@ -373,8 +372,6 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
         #git clone https://git.fdos.me/stack/AR-B-P-B.git
 		#git clone https://github.com/{resName}/shadowsocksr.git
 
-		git clone https://github.com/{resName}/AR-B-P-B
-
 		git clone https://github.com/${resName}/AR-B-P-B
 
         mv AR-B-P-B SSR-Bash-Python
@@ -389,8 +386,6 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
 else
     cd /usr/local
     #git clone https://git.fdos.me/stack/AR-B-P-B.git
-
-	git clone https://github.com/{resName}/AR-B-P-B
 
 	git clone https://github.com/${resName}/AR-B-P-B
 
