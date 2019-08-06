@@ -219,7 +219,6 @@ if [[ ${OS} == CentOS ]];then
     yum install vixie-cron crontabs -y
 fi
 if [[ ${OS} == Debian ]];then
-	apt-get update
 	apt-get install python screen curl -y
 	apt-get install python-pip -y
 	apt-get install git -y
