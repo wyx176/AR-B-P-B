@@ -243,7 +243,7 @@ if [[ $? != 0 ]];then
 fi
 if [[ ! -e /usr/share/dict/words ]];then
     cd /usr/share/dict
-    wget -q https://down.fdos.me/words
+   # wget -q https://down.fdos.me/words
 fi
 #Install Libsodium
 libsodiumfilea="/usr/local/lib/libsodium.so"
